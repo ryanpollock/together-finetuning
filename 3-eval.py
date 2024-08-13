@@ -9,9 +9,10 @@ async_together_client = AsyncTogether(api_key=os.environ.get("TOGETHER_API_KEY")
 
 base_model = "meta-llama/Llama-3-8b-chat-hf"
 top_oss_model = "meta-llama/Llama-3-70b-chat-hf"
-finetuned_model = "ryanpollock/Meta-Llama-3-8B-Instruct-mathinstruct-500-2024-08-13-20-03-37"
+finetuned_model = "ryanpollock/Meta-Llama-3-8B-Instruct-mathinstruct-500-2024-08-13-20-03-37-064126b8"
 evaluator_model = "meta-llama/Llama-3-70b-chat-hf"
-eval_dataset = "EvalMathInstruct-100.json"
+#eval_dataset = "EvalMathInstruct-100.json"
+eval_dataset = "EvalDataset-100.json"
 
 
 async def chatCompletion(model, instruction):
